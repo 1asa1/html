@@ -1,0 +1,417 @@
+@@charset "UTF-8";
+
+*{
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: Arial, "メイリオ";
+}
+
+body{
+  margin: 0;
+}
+a, a:visited, a:hover, a:active{
+  text-decoration: none;
+}
+
+ul, li{
+  list-style: none;
+}
+
+.container{
+  max-width: 930px;
+  margin: 0 auto;
+}
+
+.centerlink{
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* flexbox */
+.flex{
+  display: flex;
+}
+
+.flex_center{
+  display: flex;
+  justify-content: center;
+}
+
+.flex_around{
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex_between{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* header */
+
+.header_top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header_left{
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.header_left ul{
+  background: rgba(255, 255, 255, 0.8);
+  max-width: 700px;
+  height: auto;
+  border-radius: 10px;
+  padding: 0;
+  padding: 10px 20px;
+}
+
+.header_left li{
+  margin: 10px 0px;
+}
+
+.header_left li + li{
+  margin-top: 15px;
+}
+
+.header_left a{
+  color: #000;
+  text-decoration: underline;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.header_left data{
+  color: #000;
+  font-size: 13px;
+  width: 120px;
+  display: inline-block;
+}
+
+.header_right{
+  display: inline-block;
+  width: 290px;
+  height: 40px;
+  position: absolute;
+  top:0;
+  right: 0;
+}
+
+.header_right ul{
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  padding: 13px;
+}
+.header_right a{
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 14px;
+}
+
+header .logo{
+  width: 360px;
+  margin: -230px auto 20px;
+  position: relative;
+  z-index: 1;
+}
+
+header .logo img{
+  width: 100%;
+}
+
+/* main */
+.topmenu ul{
+  display: flex;
+  justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.topmenu li{
+  display: inline-block;
+  width: 100px;
+  height: 90px;
+  margin-right: 70px;
+}
+.topmenu li:last-child{
+  margin-right: 0px;
+}
+.topmenu li img{
+  display: inline-block;
+  width: 70px;
+  text-align: center;
+}
+.topmenu a{
+  display: block;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+.menu_box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu_item{
+  width: 274px;
+  height: 400px;
+  margin-top:75px;
+}
+
+.menu_item .img_z{
+  border-radius: 137px;
+  width:274px;
+  height: 274px;
+}
+
+.menu_item .img_m{
+  width: 180px;
+  height: auto;
+  transform:translateX(-50%);
+  margin: -20% 50% 0;
+}
+.menu_item p{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+a.circle{
+  width: 100px;
+  height: 100px;
+  border:black 3px solid;
+  border-radius: 100%;
+  display: inline-block;
+  padding-top: 25px;
+  line-height: 24px;
+  color: black;
+  display: block;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 75px auto;
+  transition: all 0.3s;
+}
+
+
+a.circle:hover{
+  transform: scale(1.1);
+  background-color: black;
+  color: white;
+}
+
+
+/* omoi */
+.sec-omoihead{
+  background-image: url(img/norihashi_top.png),url(img/norihashi_bottom.png);
+  background-position: top left, bottom left;
+  background-repeat: repeat-x;
+  background-size: 1280px;
+  padding: 10px 0;
+  color: #fff;
+}
+
+.sec_inner{
+  padding:50px 0;
+  background-color: #000;
+  position: relative;
+  text-align: center;
+}
+
+.sec-omoihead .copy{
+  font-size: 32px;
+  margin: 0 auto 40px;
+  writing-mode:vertical-rl;
+  -webkit-writing-mode:vertical-rl;
+  line-height: 2.5;
+  position: relative;
+  z-index: 3;
+  display: inline-block;
+}
+
+.sec-omoihead .copy .chotto{
+  width: 70px;
+  height: 70px;
+  font-size: 14px;
+  line-height: 70px;
+  padding-top: 7px;
+  display: inline-block;
+  background-image: url(../img/onigiri_w.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #000;
+  position: absolute;
+  top: 45px;
+  left: 2px;
+  transform: rotateZ(-10deg);
+}
+
+.sec-omoihead .copy .afterword{
+  margin-top: 4em;
+  font-size: 32px;
+}
+
+a.circle_black{
+  width: 100px;
+  height: 100px;
+  border:white 3px solid;
+  border-radius: 100%;
+  display: inline-block;
+  padding-top: 25px;
+  line-height: 24px;
+  color: white;
+  display: block;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 75px auto;
+  transition: all 0.3s;
+}
+
+
+a.circle_black:hover{
+  transform: scale(1.1);
+  background-color: white;
+  color: black;
+}
+
+/* kodawari */
+
+.container {counter-reset:kodawari;}
+
+.kodawari_left, .kodawari_right{
+  display: flex;
+  justify-content:space-between;
+  margin-top: 80px;
+}
+
+.kodawari_right{
+  flex-direction: row-reverse;
+}
+
+.kodawari_right .kodawari_text_box{
+  padding-left:30px;
+}
+
+.kodawari_text_box{
+  width: 440px;
+  height:270px;
+}
+
+.kodawari_cap{
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
+.kodawari_cap::after{
+  counter-increment: kodawari 1;
+  content:counter(kodawari);
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/onigiri_b.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  top: -5px;
+  padding-top: 5px;
+  padding-left: 8px;
+}
+
+.kodawari_title{
+  font-size: 32px;
+  line-height: 2;
+}
+
+.kodawari_text{
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.kodawari_pic_box{
+  width: 540px;
+  height: 270px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.kodawari_pic_box img{
+  width: 270px;
+}
+
+
+/* footer */
+footer{
+  background-color: black;
+  display: flex;
+  padding: 50px;
+  justify-content: space-around;
+}
+
+
+.footer_1, .footer_3{
+  width: 30%;
+  color: white;
+}
+
+.footer_2{
+  width: 40%;
+  color: white;
+}
+
+.footer_1 a, .footer_2 a, .footer_3 a{
+    color: white;
+    font-family: "メイリオ";
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .footer_1 li{
+    line-height: 43px;
+    text-align: right;
+  }
+
+  .footer_1 li a{
+    transition: .2s;
+  }
+
+  .footer_1 li a:hover{
+    transform: scaleX(1.1);
+  }
+
+
+.footer_2{
+  text-align: center;
+}
+
+
+.sns{
+  margin: 20px;
+}
+.footer_2 img{
+  max-width: 175px;
+}
+
+
+.footer_3{
+  line-height: 28px;
+}
+
+.footer_3 p{
+  margin-bottom: 32px;
+}

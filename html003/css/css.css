@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+body,html {
+    height: 100%;
+    margin: 0 auto;
+    font-family: Quicksand;
+    letter-spacing:2px;
+}
+/*ここまでパララックスとは関係のない設定*/
+
+/*固定された画像*/
+.parallax {
+    position: relative;
+    background-image: url("../img/background.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*タイトル*/
+.parallax h2 {
+    color:#fff;
+    font-size: 80px;
+    text-align: center;
+    position: fixed;
+    width :100%;
+    top: 20%;
+}
+
+/*スクロールするボックス*/
+.contents {
+    position: relative;
+    z-index: 1;
+    background: #3d84a8;
+    padding: 100px 20px;
+    color: #fff;
+    overflow: auto;
+    }
+.contents .text{
+  max-width: 800px;
+  margin: 0 auto;
+  height: auto;
+}
+
+.contents + .contents {
+  border-top: 10px solid white;
+}
+
+.contents img{
+  width:100%;
+  border: 1px solid white;
+}
+
+/* ボタン */
+.btn{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #48466d;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+.btn:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
