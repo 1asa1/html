@@ -45,6 +45,17 @@ p{
     padding-top: 70px;
 }
 
+a, a:visited{
+    color: #7a001f;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #ff4f7b;
+}
+
+
+
 /* -------------------------------------
 nav
 ------------------------------------ */
@@ -71,11 +82,8 @@ ul.flex {
     font-size: 1.5rem;
     font-weight: 700;
     transition: 0.3s;
-    color: #7a001f;
 }
-.flex li a:hover{
-    color: #ff4f7b;
-}
+
 
 /* #page1 */
 
