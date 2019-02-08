@@ -1,3 +1,6 @@
+
+
+
 $(function() {
     $('#main').pagepiling({
         menu: '#nav',
@@ -11,4 +14,8 @@ $(function() {
             'tooltips': ['top', 'profile', 'skill', 'works', 'contact']
         },
     });
+});
+
+$(function() {
+	$('[data-fancybox]').fancybox();
 });
