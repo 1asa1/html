@@ -95,12 +95,17 @@ header
     margin: 30px auto 40px;
 }
 
+
+/* -------------------------------------------------------------
+.hot-topic
+------------------------------------------------------------- */
 .hot-topic{
     display: block;
     height: 300px;
     margin-bottom: 30px;
     box-shadow: 0 6px 4px4px rgba(0,0,0,0.15);
-    transition: 0.3s;
+    transition: 0.3s opacity;
+    overflow: hidden;
 }
 
 .hot-topic:hover{
@@ -134,7 +139,21 @@ header
     color: #ddc;
 }
 
-.hot-topic
+.hot-topic .date{
+    position: absolute;
+    top: 20px;
+    right: -100px;
+    width: 300px;
+    padding: 4px;
+    background: #fff;
+    color: #2d3d54;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1;
+    transform: rotate(30deg);
+}
 
 /* --------------------------------------------------------
 main
