@@ -117,6 +117,7 @@ profile
     background-color: #fff;
     border-radius: 10px;
     margin-bottom: 100px;
+    flex-wrap: wrap;
 }
 
 .text-inner{
@@ -149,7 +150,7 @@ work
 --------------------------------------------------------- */
 
 .work-box {
-    width: 50%;
+    width: 46%;
     padding: 1rem;
     display: block;
     color: #550015;
@@ -209,6 +210,7 @@ work
     .text-wrapper{
         flex-direction: column;
         font-size: 0.8rem;
+
     }
 
     .skillcontent{
