@@ -107,7 +107,11 @@ ul.flex {
 /* ----------------------------------------------
 profile
 ------------------------------------------------ */
- 
+
+.fa-stack {
+    margin-top: -1rem;
+}
+
 .text-wrapper{
     border: 3px solid #888;
     background-color: #fff;
@@ -138,6 +142,7 @@ skill
 .skillcontent .text{
     text-align: left;
 }
+
 
 /* --------------------------------------------------------
 work
