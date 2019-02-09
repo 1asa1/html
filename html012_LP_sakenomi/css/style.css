@@ -1,0 +1,692 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700');
+
+*{
+    box-sizing: border-box;
+    color: #6e6e6e;
+
+}
+
+html{
+    font-family: 'Noto Sans JP', "Times New Roman", 游明朝, "Yu Mincho", 游明朝体, YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", HiraMinProN-W3, HGS明朝E, "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+
+.white{
+    background-color: #fff;
+    padding: 95px 0;
+}
+
+.red{
+    background: url(../img/bg.jpg) repeat;
+    padding: 95px 0;
+}
+
+.bgimg{
+    background: url(../img/bg-footer.png) repeat;
+}
+
+.bgwhite{
+    background-image: url(../img/bg_white.jpg);
+    background-repeat: repeat;
+}
+
+.container{
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+}
+
+
+h2,h3,h4{
+    font-family: "Times New Roman", 游明朝, "Yu Mincho", 游明朝体, YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", HiraMinProN-W3, HGS明朝E, "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+p{
+    font-family:'Noto Sans JP', Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+img{
+    width: 100%;
+}
+
+.text_black, .text_red, .text_white{
+    margin-bottom: 50px;
+}
+
+.text_red{
+    color: #a38c60;
+}
+
+.text_white{
+    color: #fff;
+}
+.text_white dt,.text_white dd{
+    color: white;
+}
+
+.text-black{
+    color: #6e6e6e;
+}
+
+.text_left{
+    text-align: left;
+}
+
+.btn_red, .btn_white{
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn_red:hover, .btn_white:hover{
+    background: #e1be7d;
+}
+
+.btn_red{
+    background-color: #69512E;
+}
+
+.btn_red a{
+    color: #fff;
+    display: block;
+    padding: 15px;
+}
+
+.btn_white{
+    background-color: #fff;
+}
+
+.btn_white a{
+    color: #69512E;
+    display: block;
+    padding: 15px;
+}
+
+.btn_white a:hover{
+    color: #fff;
+}
+
+/* -------------------------------------------------
+    header
+------------------------------------------------- */
+
+header{
+    height:100px;
+    background: url(../img/bg.jpg) repeat;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+}
+
+header .container{
+    padding: 0 10px;
+}
+
+/* -----------------------------------
+▼slider
+----------------------------------- */
+
+
+.slick-dots{
+    bottom:20px;
+}
+.slick-dots li button:before {
+    color: #fff;
+    opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+    color: #dbbb7f;
+    opacity: 1;
+}
+
+/* ------------------------------------
+▲slider
+------------------------------------ */
+
+.header_logo{
+    width: auto;
+    height: 80px;;
+}
+
+.top_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+
+.toggle_menu{
+    width: 630px;
+}
+
+.toggle_menu ul{
+    display: flex;
+    justify-content: space-between;
+    font-family: Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    font-size: 1.4rem;
+
+}
+
+.toggle_menu a{
+    color: #fff;
+    display: block;
+    line-height: 100px;
+}
+
+.toggle_menu a:hover{
+    color: #e1be7d;
+}
+
+/* ----------------------------------------------------------------------
+main
+------------------------------------------------------------------------ */
+.main{
+    margin-top: 100px;
+}
+.content_3{
+    display: flex;
+    justify-content: space-between;
+    padding-left:20px;
+    padding-right: 20px;
+}
+
+.content_box_3{
+    width: 31%;
+}
+
+.content_box_3{
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.content_box_3 .btn_white{
+    position: absolute;
+    bottom: 0;
+}
+
+.content_2{
+    display: flex;
+}
+
+.content_box_2{
+    width: 50%;
+}
+
+.content_2:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.content_box_2_box{
+    width: 425px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*-------------------------------------------------------------
+        faq
+-------------------------------------------------------------*/
+
+#news .content_box_2 + .content_box_2{
+    padding-left:25px; 
+}
+
+#faq .container{
+    width: 80%;
+}
+
+dt, dd{
+    padding: 10px 0;
+}
+
+dd{
+    display: none;
+    padding-left:  1rem;
+}
+
+dt{
+    position: relative;
+    cursor: pointer;
+}
+
+/* dtがクリックされたときに△をjqueryで変更するためのCSS */
+dt.down:after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f078";
+    display: inline-block;
+    position: absolute;
+    font-weight: bold;
+    right: 0;
+}
+dt.up:after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f077";
+    display: inline-block;
+    position: absolute;
+    font-weight: bold;
+    right: 0;
+}
+
+
+/*-------------------------------------------------------------
+        news
+-------------------------------------------------------------*/
+.box_left{
+    width:140px;
+    height: 140px;
+}
+.box_left img{
+    transition: 0.5s;
+}
+#news .content_box_2{
+    transition: 0.3s;
+}
+#news .content_box_2:hover{
+    opacity: 0.6;
+}
+
+.box_right{
+    width: calc(100% - 140px);
+    padding-left:25px;
+}
+.box_right .text_black{
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.box_right a{
+    color: #B91E23;
+    transition: 0.3s;
+}
+
+.box_right a:hover{
+    color: black;
+}
+
+.btn_news{
+    width: 200px;
+    margin: 0 auto;
+}
+#news img{
+    max-height: 100%;
+    width: auto;
+}
+/*-------------------------------------------------------------
+        instagram
+-------------------------------------------------------------*/
+#instagram .fa-instagram{
+    color: #fff;
+}
+
+
+.footer_menu_title{
+    font-size: 14px;
+    color: #6e6e6e;
+}
+
+.footer_menu_content li a{
+    font-size: 12px;
+    color: #6e6e6e;
+    line-height: 29px;
+}
+
+
+.insta{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.insta_box{
+    margin: 10px;
+    overflow: hidden;
+    width: 150px;  /* トリミングしたい幅 */
+    height: 150px;  /* トリミングしたい高さ */
+    position: relative;
+}
+
+.insta_box img{
+    width: 150%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s opacity;
+}
+
+.insta_box img:hover{
+    opacity: 0.8;
+}
+
+
+/* ------------------------------------------------------
+footer
+------------------------------------------------------- */
+footer .container{
+    position: relative;
+}
+
+footer.red{
+    padding: 20px;
+}
+
+.footer_img{
+    width: 150px;
+    height: auto;
+}
+
+.sns{
+    position: absolute;
+    left: 55px;
+    font-size: 20px;
+
+}
+.fab {
+    color: #fff;
+    margin-right: 10px;
+}
+
+
+.copy{
+    color: #fff;
+    text-align: center;
+}
+
+
+.pc_hidden{
+    display: none !important;
+}
+
+.m_hidden{
+    display: block !important;
+}
+
+@media screen and (max-width:1177px){
+
+/* -----------------------------------------------------------
+main 
+-----------------------------------------------------------    */
+
+.content_3{
+    padding-left:60px;
+    padding-right: 60px;
+}
+
+}
+@media screen and (min-width:767px){
+    .toggle_menu{
+        display: block !important;
+    }
+
+}
+@media screen and (max-width:991px){
+    .flex_center.content_box_2:nth-child(2) {
+        width:60%;
+    }
+    .flex_center.content_box_2:nth-child(1) {
+        width:40%;
+    }
+
+
+}
+
+@media screen and (max-width:767px){
+
+    h2{
+        font-size: 2rem;
+    }
+    .m_hidden{
+        display: none !important;
+    }
+    
+    .pc_hidden{
+        display: inline !important;
+    }
+    html{
+        line-height: 1.2;
+    }
+    
+    p{
+        line-height: 1.7;
+
+    }
+
+    header{
+        height: 55px;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        border-bottom: 1px solid #fff;
+        top: 0;
+    }
+    .container.top_flex{
+        position: relative;
+    }
+
+    .header_logo{
+        height: 50px;
+        width: auto;
+    }
+
+    .toggle{
+        position: absolute;
+        z-index: 10000;
+        width: 55px;
+        height: 55px;
+        right: 0;
+        border-left: 1px solid #fff;
+    }
+    .toggle span{
+        display: inline-block;
+        width: 15px;
+        height: 2px;
+        left: 20px;
+        background-color: #fff;
+        position: absolute;
+        transition: 0.3s;
+    }
+    .toggle span:nth-child(1){
+        top:20px;
+    }
+    .toggle span:nth-child(2){
+        top: 25px;
+        opacity: 1;
+    }
+    .toggle span:nth-child(3){
+        top: 30px;
+    }
+
+    .toggle.active span:nth-child(1){
+        transform: rotate(45deg);
+        top: 25px;
+    }
+    .toggle.active span:nth-child(2){
+        width: 50%;
+        opacity: 0;
+    }
+    .toggle.active span:nth-child(3){
+        transform: rotate(-45deg);
+        top:25px;
+    }
+    .toggle_menu.close{
+        display: none;
+    }
+
+    .toggle_menu.open{
+        display: block;
+    }
+
+    .toggle_menu{
+        z-index: 999;
+        position: absolute;
+        top:55px;
+        left: 0;
+        width: 100%;
+    }
+    .toggle_menu ul{
+        flex-direction: column;
+    }
+    .toggle_menu li{
+        display: block;
+        background-color: #69512E;
+        text-align: left;
+        padding: 0 15px;
+    }
+    .toggle_menu a{
+        display: block;
+        position: relative;
+        height: 70px;
+        line-height: 70px;
+    }
+    .toggle_menu a:after{
+        content:"";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-top: #fff solid 2px ;
+        border-right: 2px solid #fff;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 50%;
+        right: 0;
+        bottom: 0;
+        margin-top: -5px;
+        vertical-align: middle;
+    }
+    .toggle_menu a:hover:after{
+        border-color: #e1be7d;
+    }
+    header .container{
+        padding-left: 15px;
+    }
+    .main{
+        margin-top: 55px;
+    }
+    .white{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .red{
+        padding-top: 0px;
+        padding-bottom: 35px;
+    }
+    #toptext .container{
+        padding-right: 45px;
+        padding-left: 45px;
+    }
+    #toptext .text{
+        text-align: left;
+    }
+    .content_3{
+        flex-direction: column;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    .content_box_3{
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    .content_2{
+        flex-direction: column !important;
+        width: 100%;
+    }
+    .flex_center.content_box_2{
+        width: 100% !important;
+    }
+    .content_box_2_box{
+        width: 100%;
+        padding: 30px 45px;
+    }
+    .content_box_2{
+        width: 100%;
+    }
+    #faq h3{
+        padding-top: 40px;
+    }
+    #news .content_box_2{
+        padding:0 40px;
+    }
+    #news .content_box_2 + .content_box_2{
+        padding-left: 40px;
+    }
+    .box_left{
+        width: 90px;
+    }
+    .box_left img{
+        width: 90px;
+        height: 90px;
+    }
+    .box_right{
+        width: calc(100% - 90px);
+        padding-left: 15px;
+        margin-bottom: 0;
+    }
+    .box_right .text_black {
+        font-size: 0.5rem;
+    }
+
+    .bgimg .flex{
+        flex-wrap: wrap;
+    }
+
+    #instagram h3{
+        padding-top: 40px;
+    }
+
+    #footer_menu.bgimg{
+        padding: 20px 40px;
+    }
+    .footer_menu_content {
+        width: 50%;
+    }
+    #footer_menu.bgimg p{
+        padding-bottom: 10px;
+    }
+    #footer_menu.bgimg li:last-child{
+        padding-bottom: 20px;
+    }
+
+    .sns{
+        left: 50%;
+        bottom: 50px;
+        transform: translateX(-50%)
+    }
+
+    .fab{
+        color: #6e6e6e;
+    }
+    .fab + .fab{
+        margin-left: 20px;
+    }
+
+}
