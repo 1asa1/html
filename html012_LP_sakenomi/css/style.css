@@ -9,6 +9,7 @@
 
 html{
     font-family: 'Noto Sans JP', "Times New Roman", 游明朝, "Yu Mincho", 游明朝体, YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", HiraMinProN-W3, HGS明朝E, "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    overflow-x: hidden;
 }
 
 .white{
@@ -556,7 +557,8 @@ main
     }
     .toggle_menu li{
         display: block;
-        background-color: #69512E;
+        background: url(../img/bg.jpg);
+        border-bottom: 1px solid #fff;
         text-align: left;
         padding: 0 15px;
     }

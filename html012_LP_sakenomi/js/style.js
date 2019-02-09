@@ -18,18 +18,14 @@ $(function(){
 
 //ハンバーガーメニュー内のページ内リンクがクリックされたらハンバーガーメニューを閉じるためのjquery
 $(function(){
-    //ウインドウの横幅を取得
-    var width = window.innerWidth;
-
     //変更サイズである767より小さければ
     //これを入れないと大きくても消えて出てくる
-    if(window < 767){
-        $('.toggle_menu a').on('click',function(){
-            $('nav').slideToggle();
-            $('.toggle').toggleClass('active');
-            $('nav').toggleClass('open').removeClass('close');
-        })
-    }
+    $('.toggle_menu a').on('click',function(){
+        if(window.innerWidth < 767){
+            $('.toggle').click();
+        }
+    });
+
 });
 
 
