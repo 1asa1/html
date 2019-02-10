@@ -6,7 +6,8 @@ body{
     line-height: 1.7rem;
     font-family: 'Noto Sans JP', 'メイリオ', 'Meiriyo', sans-serif;
     color: #550015;
-
+	line-height: 1.7;
+	font-size: 90%;
 }
 
 .flex{
@@ -41,10 +42,6 @@ p{
     color: #ff5d85;
 }
 
-.pp-scrollable{
-    padding-top: 70px;
-}
-
 a, a:visited{
     color: #7a001f;
     transition: 0.3s;
@@ -54,6 +51,10 @@ a:hover{
     color: #ff4f7b;
 }
 
+.col-6{
+    flex:1;
+	padding: 1rem;
+}
 
 
 /* -------------------------------------
@@ -84,15 +85,26 @@ ul.flex {
     transition: 0.3s;
 }
 
-
-/* #page1 */
-
-#page1 .container{
-    text-align: center;
+#page1, #page2, #page3, #page4, #page5{
+	position: relative;
 }
 
+#main{
+	overflow: hidden;
+}
+
+/*-------------------------------------------------------------
+		#page1 toppage
+-------------------------------------------------------------*/
+
+#page1{
+	padding: 90px 0;
+	width: 100%;
+}
+
+
 #page1 h1{
-    margin: 2em auto; 
+    margin: 0 auto; 
     padding: 2rem 0;
     width: 90%; /*幅の調節*/
     color: #ff4f7b; /* 文字色 */
@@ -104,9 +116,39 @@ ul.flex {
 
 }
 
+#page1 .container{
+    text-align: center;
+}
+
+span.deg{
+	display: inline-block;
+	transform: rotate(-25deg);
+	font-size: 6rem;
+	margin-right: -15px;
+}
+
+
+#page1::after{
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-top: 60px solid transparent;
+	border-left: 50vw solid transparent;
+	border-right: 50vw solid #ffe0e0;
+	border-bottom: 60px solid #ffe0e0;
+}
+
+
 /* ----------------------------------------------
-profile
+	#page2 profile
 ------------------------------------------------ */
+
+#page2{
+	background-color: #ffe0e0;
+	padding: 40px 0;
+}
 
 .fa-stack {
     margin-top: -1rem;
@@ -120,18 +162,31 @@ profile
     flex-wrap: wrap;
 }
 
-.text-inner{
-    flex:1;
-    padding: 1rem;
-}
 
-.text-inner dd{
+
+.col-6 dd{
     padding-left: 1rem;
 }
 
+#page2::after{
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-top: 60px solid transparent;
+	border-left: 50vw solid transparent;
+	border-right: 50vw solid #ffc0d0;
+	border-bottom: 60px solid #ffc0d0;
+}
 /* --------------------------------------------------------
-skill
+	#page3 skill
 --------------------------------------------------------- */
+
+#page3{
+	background-color: #ffc0d0;
+	padding: 40px 0 ;
+}
 
 .skillcontent{
     flex: 1;
@@ -143,14 +198,33 @@ skill
 .skillcontent .text{
     text-align: left;
 }
-
+#page3::after{
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-top: 60px solid transparent;
+	border-right: 50vw solid transparent;
+	border-left: 50vw solid #ffe0e0;
+	border-bottom: 60px solid #ffe0e0;
+}
 
 /* --------------------------------------------------------
 work
 --------------------------------------------------------- */
 
+#page4{
+	background-color: #ffe0e0;
+	padding: 40px 0;
+}
+
+#page4 .text-wrapper{
+	justify-content: space-around;
+}
+
 .work-box {
-    width: 46%;
+    width: 40%;
     padding: 1rem;
     display: block;
     color: #550015;
@@ -163,7 +237,7 @@ work
 
 .work-inner{
     position: relative;
-    width: 100%;
+    max-width: 100%;
 }
 
 .work-inner img{
@@ -182,12 +256,44 @@ work
     color: #ffffff;
     opacity: 0;
     transition: 0.5s;
-    font-size: 0.8rem;
+	font-size: 0.8rem;
+	overflow: hidden;
 }
 .work-inner .caption:hover{
     opacity: 1;   
 }
 
+#page4::after{
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-top: 60px solid transparent;
+	border-right: 50vw solid transparent;
+	border-left: 50vw solid #fff;
+	border-bottom: 60px solid #fff;
+}
+
+/*-------------------------------------------------------------
+		■top-go
+-------------------------------------------------------------*/
+#top-go{
+	position: fixed;
+	bottom: 0;
+	right: 10px;
+	display: inline-block;
+	display: none;
+}
+
+
+
+/*-------------------------------------------------------------
+		■#page5 contact
+-------------------------------------------------------------*/
+#page5{
+	padding: 40px 0;
+}
 
 /* タブレットのスタイル */
 @media all and (max-width: 768px) {

@@ -7,7 +7,6 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-	<link rel="stylesheet" href="css/jquery.pagepiling.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,9 +25,8 @@
 
 		<div class="section" id="page1">
 			<div class="container">
-				<h1>Asai's<br>Portfolio</h1>
-				<p>ご覧いただきありがとうございます。<br>
-				あさいのポートフォリオサイトです。</p>
+				<h1>Asai's<br><span class="deg">P</span><!-- /.deg -->ortfolio</h1>
+
 			</div><!-- /.container -->
 		</div><!-- /#page1.section -->
 
@@ -37,7 +35,7 @@
 
 				<h3 class="pink">profile</h3>
 				<div class="text-wrapper flex">
-					<div class="text-inner">
+					<div class="col-6">
 						<p>あさい（ニックネーム）<br>
 							1990年生まれ<br>
 							宮城県仙台市在住<br>
@@ -57,7 +55,7 @@
 							</a>
 						</p>
 					</div><!-- /.text-inner -->
-					<div class="text-inner">
+					<div class="col-6">
 						<h4>My favorite</h4>
 							<dl>
 								<dt>特撮</dt>
@@ -93,7 +91,7 @@
 						<div class="skillcontent">
 							<i class="fab fa-js-square fa-3x"></i>
 							<p class="title">JavaScript</p><!-- /.title -->
-							<p class="text">簡単なif文、jQueryを使用しaddClass,removeClassを利用したトグルメニューの作成。</p>
+							<p class="text">簡単なif文、jQueryの使用。</p>
 						</div><!-- /.skillcontent -->
 				</div><!-- /.text-wrapper -->
 			</div><!-- /.container -->
@@ -105,7 +103,21 @@
 				<div class="text-wrapper flex">
 				
 					<a href="http://asai.wew.jp/portfolio/portfolio/itms/html012_LP_sakenomi/index.html" class="work-box">
-						<div class="work-inner">
+						<div class="work-inner  col-6">
+							<img src="img/004.jpg" alt="">
+							<div class="caption">
+								<p>製作日数：1日</p>
+								<p>使用アイテム：Bootstrap4
+								</p>
+								<p>コメント：<br>
+									アフィリエイト用LP。イラストを使い可愛らしいデザインにした。</p>
+							</div><!-- /.caption -->
+						</div><!-- /.work-inner -->
+						<h4>架空ランディングページ</h4>
+					</a><!-- /.work-box -->
+					
+					<a href="http://asai.wew.jp/portfolio/portfolio/itms/html012_LP_sakenomi/index.html" class="work-box">
+						<div class="work-inner col-6">
 							<img src="img/003.jpg" alt="">
 							<div class="caption">
 								<p>製作日数：10日</p>
@@ -119,26 +131,26 @@
 					</a><!-- /.work-box -->
 
 					<a href="img/002_pc.jpg" class="work-box">
-						<div class="work-inner">
+						<div class="work-inner col-6">
 							<img src="img/002.jpg" alt="">
 							<div class="caption">
 								<p>製作日数：7日</p>
 								<p>使用アイテム：smooth-scroll.js</p>
 								<p>コメント：<br>
-									友人より頼まれて作成した、アプリゲームの二次創作サイト。もとのゲームのサイトの外見になるべく近づけてほしいという頼みでほぼ模写コーディングする。<br>プレイするボタンは当初もっと小さかったものの、怪しげなサイトの雰囲気を出してほしいと言われhoverで大きくなるようにした。</p>
+									友人より頼まれて作成した、アプリゲームの二次創作サイト。もとのゲームのサイトの外見になるべく近づけてほしいという頼みでほぼ模写のようなコーディング。</p>
 							</div><!-- /.caption -->
 						</div><!-- /.work-inner -->
 						<h4>同人サイト</h4>
 					</a><!-- /.work-box -->
 
 					<a href="http://asai.wew.jp/wordpress/outside/nokisaki/" class="work-box" target="_blank">
-						<div class="work-inner">
+						<div class="work-inner col-6">
 							<img src="img/001.jpg" alt="">
 							<div class="caption">
 								<p>製作日数：3日</p>
 								<p>使用アイテム：Bootstrap4</p>
 								<p>コメント：<br>
-									アフィリエイトLP。何かLPを作ろうと思った際に登録しているアフィリエイトサイトで面白そうな案件があったので作成しました。</p>
+									アフィリエイトLP。何かLPを作ろうと思った際に登録しているアフィリエイトサイトで面白そうな案件があったので作成。</p>
 							</div><!-- /.caption -->
 						</div><!-- /.work-inner -->
 						<h4>ランディングページ</h4>
@@ -159,11 +171,12 @@
 		</div><!-- /#page5.section -->
 	</div><!-- /#main -->
 
-
+<div id="top-go">
+	<a href=""><i class="fas fa-arrow-up fa-5x"></i></a>
+</div><!-- /#top-go --><!-- /.top-go -->
 
 	<script
 	src="https://code.jquery.com/jquery-3.3.1.js"></script>
-	<script src="js/jquery.pagepiling.min.js"></script>
 	<script src="js/style.js?201902091"></script>
 </body>
 </html>

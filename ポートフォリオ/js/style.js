@@ -1,21 +1,27 @@
 
+// トップへ戻るがふわっと浮き出るはず
+$(function(){
+	
+	$(window).scroll(function(){
+		var y = $(window).scrollTop();
+		var deru = 100
+
+		if(y < deru){
+			$('#top-go').fadeOut();
+		}else{
+			$('#top-go').fadeIn();
+		}
+	})
+})
+
+//トップへ勢いよく戻るはず
+
+$(function(){
+	$('#top-go').click(function(){
+		$('body, html').animate({scrollTop:0}, 500, 'swing');
+		return false;
+	})
+})
 
 
-$(function() {
-    $('#main').pagepiling({
-        menu: '#nav',
-        sectionSelector: '.section',
-        sectionsColor: ['#fff', '#ffe0e0', '#ffc0d0', '#ffe0e0','#fff'],
-        anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
-        navigation: {
-            'textColor': '#fff',
-            'bulletsColor': '#ff5d85',
-            'position': 'right',
-            'tooltips': ['top', 'profile', 'skill', 'works', 'contact']
-        },
-    });
-});
-
-$(function() {
-	$('[data-fancybox]').fancybox();
-});
+// dd dtのあれこれそれ
