@@ -4,9 +4,10 @@
 html{
 	font-family: 'Noto Sans JP', "Helvetica Neue", Helvetica, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", メイリオ, Meiryo, sans-serif;
 	color: #555;
+	
 }
 
-body{
+#main{
 	overflow-x: hidden;
 }
 
@@ -16,11 +17,39 @@ body{
 
 .card{
 	border-radius: 20px;
+	height: 100%;
+
+}
+
+.dot, .dot-white{
+	width: 200px;
+	height: 5px;
+	margin: 0 auto 25px;
+}
+
+.dot{
+	border-bottom: 5px dotted #DDCBA8;
+}
+.dot-white{
+	border-bottom: 5px dotted #fff;
+
+}
+
+h3{
+	color: #C6A367;
+}
+
+.container-mini{
+	max-width: 700px;
 }
 
 /*-------------------------------------------------------------
 		top
 -------------------------------------------------------------*/
+
+#top{
+	background: url(../img/bg_pink.jpg);
+}
 
 #top .container{
 	position: relative;
@@ -42,7 +71,12 @@ body{
 	position: absolute;
 	height: 100vh;
 	right: 0;
-	top: 10px;
+	top: 20px;
+}
+
+#top p{
+	font-size: 1.5rem;
+	line-height: 1;
 }
 
 /*-------------------------------------------------------------
@@ -53,6 +87,7 @@ body{
 
 #if{
 	position: relative;
+
 }
 
 #if::after {
@@ -68,7 +103,7 @@ body{
   }
 
 #if .container{
-position: relative;
+	position: relative;
 }
 
 #if .if-img{
@@ -212,11 +247,16 @@ position: relative;
 
 #point{
 	position: relative;
-	overflow: 
+	overflow: hidden;
 }
 
 #point .container{
 	position: relative;
+}
+
+#point .text-center{
+	color: #d42b25;
+	font-weight: bold;
 }
 
 #point img{
@@ -230,7 +270,7 @@ position: relative;
 
 #point .card{
 	margin-bottom: 10px;
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
 /*-------------------------------------------------------------
@@ -238,7 +278,7 @@ position: relative;
 -------------------------------------------------------------*/
 
 #go{
-	background: #E5D3B0;
+	background: url(../img/bg_cha.jpg);
 	position: relative;
 	overflow: hidden;
 }
@@ -255,11 +295,28 @@ position: relative;
 	z-index: 3;
 }
 
-.img-go02{
+.img-go01, .img-go02, .img-go03{
 	position: absolute;
 	width: 200px;
-	top: 50%;
+}
+
+.img-go01{
+	top: 10%;
+	right: 10%;
+	transform: rotate(15deg);
+}
+
+.img-go02{
+	bottom: 10%;
 	left: 0;
+	transform: rotate(-35deg);
+	z-index: 0;
+}
+
+.img-go03{
+	bottom:10%;
+	left: 50%;
+
 }
 
 .btn-outline-success{
@@ -267,7 +324,7 @@ position: relative;
 	border-color: #f0928f;
 	border-width: 3px;
 	font-weight: bold;
-	background-color: rgba(254, 251, 249, 0.719);
+	background-color: rgba(254, 251, 249, 0.8);
 	height: 70px;
 	border-radius: 35px;
 	transition: 0.3s;
@@ -275,6 +332,24 @@ position: relative;
 
 .btn-outline-success:hover{
 	background-color: #f0928f;
-	border-color: #E5D3B0;
+	border-color: #f0928f;
 }
 
+#go p{
+	color: rgb(94, 77, 52);
+}
+
+#go .moshimolink{
+	z-index: 4;
+	max-width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 768px){
+	#point img{
+		top:100px;
+		max-width: 130%;
+		left: 0;
+	}
+
+}
