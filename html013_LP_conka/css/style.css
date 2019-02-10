@@ -3,6 +3,7 @@
 
 html{
 	font-family: 'Noto Sans JP', "Helvetica Neue", Helvetica, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", メイリオ, Meiryo, sans-serif;
+	color: #555;
 }
 
 .marumoji{
@@ -19,10 +20,11 @@ html{
 }
 
 #top .top-text{
+	display: inline-block;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translateY(-50%);
+	transform: translate(-50%,-50%);
 	z-index: 2;
 	background-color:rgba(254, 251, 249, 0.7);
 	border-radius: 20px;
@@ -38,3 +40,114 @@ html{
 /*-------------------------------------------------------------
 		if
 -------------------------------------------------------------*/
+
+#if .container{
+	position: relative;
+}
+
+#if .if-img{
+	height: 100%;
+	width: auto;
+	margin-left: auto;
+	margin-right: 0px;
+	position: absolute;
+	left: 0;
+	z-index: -1;
+}
+
+#if .text-center p{
+	display: inline-block;
+	margin-left: 0;
+	margin-right: auto;
+}
+
+.hukidashi1, .hukidashi2, .hukidashi3{
+	position: relative;
+	display: inline-block;
+	margin: 1.5em 0 1.5em 15px;
+	padding: 7px 10px;
+	min-width: 120px;
+	max-width: 200px;
+	color:  #ad9362;
+	font-size: 16px;
+	background: #FFF;
+	border: solid 3px  #ad9362;
+	box-sizing: border-box;
+	border-radius: 20px;
+  }
+
+  .hukidashi1 p, .hukidashi2 p, .hukidashi3 p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+  }
+  
+  .hukidashi1:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -24px;
+	margin-top: -12px;
+	border: 12px solid transparent;
+	border-right: 12px solid #FFF;
+	z-index: 2;
+  }
+  
+  .hukidashi1:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -30px;
+	margin-top: -14px;
+	border: 14px solid transparent;
+	border-right: 14px solid  #ad9362;
+	z-index: 1;
+  }
+  
+
+
+  .hukidashi2:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: -24px;
+	margin-top: -12px;
+	border: 12px solid transparent;
+	border-left: 12px solid #FFF;
+	z-index: 2;
+  }
+  
+  .hukidashi2:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: -30px;
+	margin-top: -14px;
+	border: 14px solid transparent;
+	border-left: 14px solid  #ad9362;
+	z-index: 1;
+  }
+
+  .img-if01, .img-if02, .img-if03{
+	  position: absolute;
+	width: 100%;;
+	max-width: 200px;
+	height: auto;
+	z-index: -2;
+  }
+
+  .img-if01{
+	top: 10%;
+	right: 40%;
+	transform: rotate(-15deg);
+  }
+
+.img-if02{
+	top: 50%;
+	right: 10%;
+}
+
+.img-if03{
+	top: calc(78% - 100px);
+	right: 50%;
+}
