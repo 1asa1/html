@@ -123,7 +123,7 @@ h3{
 	margin-right: auto;
 }
 
-.hukidashi1, .hukidashi2, .hukidashi3{
+.hukidashi1, .hukidashi2{
 	position: relative;
 	display: inline-block;
 	margin: 1.5em 0 1.5em 15px;
@@ -135,9 +135,10 @@ h3{
 	border: solid 3px  #ad9362;
 	box-sizing: border-box;
 	border-radius: 20px;
+	transition: 0.5s transform;
   }
 
-  .hukidashi1 p, .hukidashi2 p, .hukidashi3 p {
+  .hukidashi1 p, .hukidashi2 p {
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -146,11 +147,17 @@ h3{
 .hukidashi1{
 	margin-right: 0;
 	margin-left: auto;
+	transform: translateX(-1000%);
 }
 
 .hukidashi2{
 	margin-right: auto;
 	margin-left: 0;
+	transform: translateX(1000%);
+}
+
+.hukidashi1.active, .hukidashi2.active{
+	transform: translate(0);
 }
 
   .hukidashi1:before {
