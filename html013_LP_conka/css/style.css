@@ -6,8 +6,16 @@ html{
 	color: #555;
 }
 
+body{
+	overflow-x: hidden;
+}
+
 .marumoji{
 	font-family: "Nico Moji";
+}
+
+.card{
+	border-radius: 20px;
 }
 
 /*-------------------------------------------------------------
@@ -41,16 +49,35 @@ html{
 		if
 -------------------------------------------------------------*/
 
-#if .container{
+
+
+#if{
 	position: relative;
 }
 
+#if::after {
+	content: '';
+	display: block;
+	position: absolute;
+	left:0;
+	bottom: -73px;
+	border-top: 60px solid transparent;  
+	border-left: 50vw solid transparent;  
+	border-right: 50vw solid #E5D3B0;  
+	border-bottom: 60px solid #E5D3B0;  
+  }
+
+#if .container{
+position: relative;
+}
+
 #if .if-img{
-	height: 100%;
+	height: calc(100% + 80px);
 	width: auto;
 	margin-left: auto;
 	margin-right: 0px;
 	position: absolute;
+	top:0px;
 	left: 0;
 	z-index: -1;
 }
@@ -151,3 +178,103 @@ html{
 	top: calc(78% - 100px);
 	right: 50%;
 }
+
+
+/*-------------------------------------------------------------
+		■answer
+-------------------------------------------------------------*/
+
+#answer{
+	background-color:  #E5D3B0;
+	padding-bottom: 120px;
+	position: relative;
+}
+
+
+
+#answer::after {
+	content: '';
+	display: block;
+	position: absolute;
+	left:0;
+	bottom: 0px;
+	border-top: 60px solid transparent;  
+	border-left: 50vw solid transparent;  
+	border-right: 50vw solid #fff;  
+	border-bottom: 60px solid #fff;  
+  }
+
+
+
+/*-------------------------------------------------------------
+		■point
+-------------------------------------------------------------*/
+
+#point{
+	position: relative;
+	overflow: 
+}
+
+#point .container{
+	position: relative;
+}
+
+#point img{
+	position: absolute;
+	top: 0px;
+	right: 0;
+	z-index: -1;
+	max-width: 100%;
+
+}
+
+#point .card{
+	margin-bottom: 10px;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+/*-------------------------------------------------------------
+		■go
+-------------------------------------------------------------*/
+
+#go{
+	background: #E5D3B0;
+	position: relative;
+	overflow: hidden;
+}
+
+#go .container{
+	position: relative;
+}
+
+#go img{
+	max-width: 100%;
+}
+
+#go div{
+	z-index: 3;
+}
+
+.img-go02{
+	position: absolute;
+	width: 200px;
+	top: 50%;
+	left: 0;
+}
+
+.btn-outline-success{
+	color: #f0928f;
+	border-color: #f0928f;
+	border-width: 3px;
+	font-weight: bold;
+	background-color: rgba(254, 251, 249, 0.719);
+	height: 70px;
+	border-radius: 35px;
+	transition: 0.3s;
+}
+
+.btn-outline-success:hover{
+	background-color: #f0928f;
+	border-color: #E5D3B0;
+}
+
