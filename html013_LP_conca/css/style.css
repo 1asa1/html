@@ -266,6 +266,20 @@ h3{
 	border-bottom: 60px solid #fff;  
   }
 
+  /* answerの上の部分の斜め線（左側）。不要と感じたら消す */
+#answer::before {
+	content: '';
+	z-index: -1;
+	display: block;
+	position: absolute;
+	left:0;
+	top: -120px; /*border-topの倍の数？*/
+	border-top: 60px solid transparent;  
+	border-left: 50vw solid #E5D3B0;  
+	border-right: 50vw solid transparent;  
+	border-bottom: 60px solid #E5D3B0;  
+}
+
 
 
 /*-------------------------------------------------------------
