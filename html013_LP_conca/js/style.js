@@ -37,6 +37,18 @@ $(function(){
 
 		});
 
+		$('.kakudai').each(function(){
+			//現在位置の取得とactiveをつける
+			var kakudaipos = $(this).offset().top; //下からフェードインするやつの
+			if(scroll > kakudaipos - windowHeight + 50){
+				$(this).addClass('kakudaiactive');
+			}
+			if(scroll < 100){
+				$(this).removeClass('kakudaiactive');
+			}
+
+		});
+
 	});
 });
 

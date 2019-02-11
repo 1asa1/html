@@ -54,6 +54,15 @@ h3{
 	opacity: 1;
 }
 
+.kakudai{
+	transform: scale(0.3);
+	transition: 0.3s transform;
+}
+
+.kakudaiactive{
+	transform: scale(1);
+}
+
 /*-------------------------------------------------------------
 		top
 -------------------------------------------------------------*/
@@ -280,6 +289,13 @@ h3{
 	border-bottom: 60px solid #E5D3B0;  
 }
 
+.answer-top-text{
+	position: absolute;
+	top:-50px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
 
 
 /*-------------------------------------------------------------
@@ -300,13 +316,43 @@ h3{
 	font-weight: bold;
 }
 
-#point img{
+#point img.point-girl{
 	position: absolute;
 	top: 0px;
 	right: 0;
 	z-index: -1;
 	max-width: 100%;
 
+}
+
+.img-point04, .img-point05,.img-point06, .img-point07{
+	position: absolute;
+	max-width: 200px;
+	height: auto;
+}
+
+.img-point04{
+	top: 0%;
+	left: 20%;
+	transform: rotate(25deg);
+	z-index: -2;
+}
+.img-point05{
+	top: 35%;
+	left: 45%;
+	z-index: -2;
+}
+.img-point06{
+	bottom: 3%;
+	right: 15%;
+	transform:rotate3d(0,1,1,45deg);
+	z-index: -2;
+}
+.img-point07{
+	bottom: 25%;
+	left: 5%;
+	transform: rotate3d(1,1,1,-30deg);
+	z-index: -2;
 }
 
 #point .card{
@@ -409,7 +455,7 @@ h3{
 }
 
 @media screen and (max-width: 768px){
-	#point img{
+	#point img.point-girl{
 		top:100px;
 		max-width: 130%;
 		left: 0;
