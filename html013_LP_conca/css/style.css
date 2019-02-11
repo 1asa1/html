@@ -442,6 +442,7 @@ h3{
 	right: 0;
 	z-index: 999;
 	text-align: right;
+	display:none;
 	transition: 0.3s transform;
 }
 

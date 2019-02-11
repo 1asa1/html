@@ -7,7 +7,6 @@ $(function(){
 		var windowHeight = $(window).height(); //ウインドウの高さを取得
 
 		//ふわっと現れるボタン（トップには戻らない）
-		$('#top-go').hide;
 		if(scroll < 100){
 			$('#top-go').fadeOut();
 		}else{
