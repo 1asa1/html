@@ -95,6 +95,14 @@ header
     margin: 30px auto 40px;
 }
 
+/* --------------------------------------------------------
+main
+----------------------------------------------------------- */
+.main{
+    display: block;
+    float: left;
+    width: 660px;
+}
 
 /* -------------------------------------------------------------
 .hot-topic
@@ -154,14 +162,39 @@ header
     line-height: 1;
     transform: rotate(30deg);
 }
+/*-------------------------------------------------------------
+		#news
+-------------------------------------------------------------*/
 
-/* --------------------------------------------------------
-main
------------------------------------------------------------ */
-.main{
-    display: block;
-    float: left;
-    width: 660px;
+.heading{
+	padding: 10px 12px;
+	background: url(../images/bg-slash.gif);
+	letter-spacing: 1px;
+	font-size: 1.6rem;
+}
+
+.scroll-list{
+	max-height: 220px;
+	overflow-y: auto;
+	margin-bottom: 30px;
+	list-style-type: none;
+}
+
+
+.scroll-list .scroll-item a{
+	display: block;
+	padding: 10px 15px;
+	color: #333333;
+	transition: background-color 0.3s;
+}
+
+.scroll-list .scroll-item:nth-last-of-type(even) a{
+	background: url(../images/bg-slash.gif);
+
+}
+
+.scroll-list .scroll-item a:hover{
+	background-color: #fafaf8;
 }
 
 /* --------------------------------------------------------
