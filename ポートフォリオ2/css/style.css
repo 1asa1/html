@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+*{
+	box-sizing: border-box;
+}
+
 
 html{
 	font-family: 'Noto Sans JP', sans-serif;
@@ -130,7 +134,7 @@ profile
 /*-------------------------------------------------------------
 		タブレットサイズ
 -------------------------------------------------------------*/
-@media screen and (min-width:767px) and (max-width:959px) { 
+@media screen and (min-width:767px) { 
 .col-5{
 	width:41.666666%;
 }
