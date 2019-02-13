@@ -231,7 +231,7 @@ header{
 }
 
 #toggle-menu{
-	display: block;
+	display: block !important;
 }
 
 #toggle-box{
