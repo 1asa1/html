@@ -47,6 +47,15 @@ p{
 	padding-top: 10px;
 }
 
+a, a:link, a:visited{
+	color: #333;
+	transition: 0.3s;
+}
+
+a:hover{
+	opacity: 0.8;
+}
+
 img{
 	max-width: 100%;
 }
