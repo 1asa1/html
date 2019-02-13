@@ -23,8 +23,12 @@ $(function(){
 	})
 
 
-	//ウインドウがリサイズされるたびに行う挙動
-	$(window).resize(function(){
+
+	//ウインドウがリサイズ、もしくは読み込まれるたびに行う挙動
+	//onにすることで同じ挙動を複数に指定する事ができる
+	$(window).on('load resize', function(){
+
+
 		//スマホ用ハンバーガーメニューでクリックしたときにメニュー自体を消す
 		if($(window).width() < 767){
 			$('#tabmenu li').on('click', function(){

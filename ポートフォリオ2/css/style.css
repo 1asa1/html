@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700');
+@import url('https://fonts.googleapis.com/css?family=Ribeye+Marrow');
 
 *{
 	box-sizing: border-box;
@@ -21,6 +23,7 @@ html{
 }
 
 #profile, #work, #contact{
+	margin-top: 55px;
 	display: none;
 }
 
@@ -40,14 +43,35 @@ html{
 	flex-wrap: wrap;
 }
 
+p{
+	padding-top: 10px;
+}
+
 img{
 	max-width: 100%;
 }
 
-.deg{
-	display: inline-block;
-	transform: rotate(-15deg);
+h2{
+	margin-top: 5px;
+    display: flex;
+	align-items: center;
+	text-align: center;
+	font-size: 1.2rem;
 }
+
+h2::before,h2::after{
+    border-top: 1px dashed #333;
+    content: "";
+	flex-grow: 1;
+}
+h2::after{
+	margin-left: 0.5rem;
+}
+h2::before{
+	margin-right: 0.5rem;
+}
+
+
 
 .m_hidden{
 	display: none;
@@ -59,9 +83,12 @@ img{
 -------------------------------------------------------- */
 
 header{
-	background-color: rgb(96,128,64);
+	background: url(../img/bg.png);
 	height: 55px;
-	position: relative;
+	position: fixed;
+	width: 100%;
+	top: 0;
+
 }
 
 header .container{
@@ -69,9 +96,21 @@ header .container{
 	display: flex;
 }
 
+h1{
+	margin-left: 15px;
+	font-size: 30px;
+	line-height: 55px;
+	font-family: 'Ribeye Marrow', cursive;
+}
+
+.deg{
+	display: inline-block;
+	transform: rotate(-15deg);
+}
+
 
 #top{
-	width: calc(100% -  180px);
+	width: 100%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-around;
@@ -116,7 +155,7 @@ header .container{
 }
 
 #toggle.toggle-active span:nth-child(1){
-	transform: rotate(45deg);
+	transform: rotate(405deg);
 	top: 29px;
 }
 
@@ -126,7 +165,7 @@ header .container{
 }
 
 #toggle.toggle-active span:nth-child(3){
-	transform: rotate(-45deg);
+	transform: rotate(-405deg);
 	bottom: 24px;
 }
 
@@ -137,7 +176,7 @@ header .container{
 
 #toggle-box{
 	z-index: 10;
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.9);
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
@@ -158,6 +197,7 @@ header .container{
 	width: 80%;
 	font-size: 2rem;
 	margin: 0 auto;
+	cursor: pointer;
 }
 
 #toggle-menu li + li{
@@ -188,6 +228,21 @@ profile
     content: "";
 	flex-grow: 1;
 	margin-left: 0.5rem;
+}
+
+dt{
+	margin-left: 1rem;
+}
+
+/*-------------------------------------------------------------
+		#work
+-------------------------------------------------------------*/
+
+#work .col-7{
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: center;
 }
 
 
@@ -222,8 +277,18 @@ profile
 	display: block !important;
 }
 
+#profile, #work, #contact{
+	margin-top: 120px;
+}
+
+/*-------------------------------------------------------------
+		header
+-------------------------------------------------------------*/
 header{
 	height: 120px;
+}
+#top{
+	width: calc(100% -  180px);
 }
 
 #toggle{
@@ -263,7 +328,6 @@ nav li{
 	font-size: 1.1rem;
 	display: block;
 	width: 98%;
-	border-radius: 25px;
 	color: #FF9EA5;
 	transition: color 0.5s;
 }
