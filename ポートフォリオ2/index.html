@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 	<link rel="stylesheet" href="mail/css/mailform.css">
 	<link rel="stylesheet" href="mail/css/jquery.datetimepicker.css">
-	<link rel="stylesheet" href="css/style.css?2019021402">
+	<link rel="stylesheet" href="css/style.css?2019021403">
 </head>
 <body>
 <div id="body">
@@ -182,20 +182,27 @@
 			<form action="mail/php/mailform.php" method="post" id="mail_form">
 				<dl>
 	
-					<dt>お名前</dt>
+					<dt>お名前<span>name</span></dt>
 					<dd class="required"><input type="text" id="name_1" name="name_1" value="" /> </dd>
 					
 	
-					<dt>メールアドレス</dt>
+					<dt>メールアドレス<span>addres</span></dt>
 					<dd class="required"><input type="email" id="mail_address" name="mail_address" value="" /></dd>
 					
-					<dt>お問い合わせの内容</dt>
+					<dt>お問い合わせの内容<span>contact</span></dt>
 					<dd class="required"><textarea id="mail_contents" name="mail_contents" cols="40" rows="5"></textarea></dd>
 					
 	
 				</dl>
 				
-				<p id="form_submit"><input type="button" id="form_submit_button" value="送信する" class="btn btn-gray"/></p>
+				<p id="form_submit"><input type="button" id="form_submit_button" value="送信する" class="btn btn-gray"/>
+					<div id="submit-success">
+						<p class="success-text">
+							送信完了！
+						</p><!-- /.success -->
+					</div>
+				</p>
+				
 			</form>
 </div><!-- /.container -->
 

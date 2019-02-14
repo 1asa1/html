@@ -526,7 +526,11 @@ EOM;
 					$( 'div.loading-layer, span.loading' ).remove();
 					var response = res.split( ',' );
 					if ( response[0] === 'send_success' ) {
-						window.location.href = response[1];
+						//window.location.href = response[1];
+						window.alert( '送信しました！' );
+						var element = document.getElementById("submit-success");
+						element.classList.add("active");
+
 					} else {
 						$( 'input#form_submit_button' ).nextAll( 'input' ).remove();
 						response[1] = response[1].replace( /<br>|<br \/>/gi, "\\n" );

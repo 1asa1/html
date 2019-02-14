@@ -315,6 +315,25 @@ profile
 		#contact
 -------------------------------------------------------------*/
 
+#form_submit{
+	padding-bottom: 0 !important;
+}
+
+#submit-success{
+    width: 90%;
+	margin: 0 auto;
+	color: red;
+	display: none;
+}
+
+#submit-success.active{
+	display: block;
+}
+
+.success-text{
+	margin-left: 0;
+}
+
 
 /*-------------------------------------------------------------
 		★タブレットサイズ
@@ -425,6 +444,13 @@ nav li:hover{
 	display: flex;
 	flex-direction: row;
 	flex: 1;
+}
+
+/*-------------------------------------------------------------
+		contact
+-------------------------------------------------------------*/
+.success-text{
+	margin-left: 35%;
 }
 
 
