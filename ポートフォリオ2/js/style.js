@@ -45,3 +45,5 @@ $(function(){
 	})
 
 })
+
+$('[data-fancybox]').fancybox();

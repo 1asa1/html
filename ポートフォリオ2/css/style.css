@@ -83,7 +83,22 @@ h2::before{
 }
 
 .btn{
-	display: block;
+	display: inline-block;
+	padding: 3px 10px;
+	text-align: center;
+	width: 100px;
+
+}
+
+.btn.btn-gray{
+	border:3px rgb(97, 97, 97) double;
+	color: rgb(97, 97, 97);
+}
+
+.btn.btn-gray:hover{
+	background: #333;
+	color: #fff;
+	border: 3px #fff double;
 }
 
 
