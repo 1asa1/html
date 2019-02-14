@@ -25,6 +25,8 @@ html{
 #profile, #work, #contact{
 	margin-top: 55px;
 	display: none;
+	height: calc(100vh - 55px);
+	overflow-y: auto;
 }
 
 #profile.show, #work.show, #contact.show{
@@ -317,6 +319,8 @@ dd{
 
 #profile, #work, #contact{
 	margin-top: 120px;
+	height: calc(100vh - 120px);
+	overflow-y: auto;
 }
 
 /*-------------------------------------------------------------
@@ -346,7 +350,7 @@ header{
 
 #toggle-menu ul li{
 	font-size: 1rem;
-	padding: 0;
+	padding: 10px;
 	border-top: none;
 }
 
@@ -366,15 +370,16 @@ nav li{
 	font-size: 1.1rem;
 	display: block;
 	width: 98%;
-	color: #FF9EA5;
+	color: #F4996C;
+	font-weight: bold;
 	transition: color 0.5s;
 }
 
 nav li.active{
-	color: #DFFAF9
+	color: #A33C43
 }
 nav li:hover{
-	color: #DFFAF9
+	color: #A33C43
 } 
 
 .skillcontent{
