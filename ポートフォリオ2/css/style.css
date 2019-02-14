@@ -82,6 +82,8 @@ h2::before{
 
 
 
+
+
 .m_hidden{
 	display: none;
 }
@@ -234,21 +236,35 @@ profile
 }
 
 
- dd{
+ dt{
     display: flex;
 	align-items: center;
 	text-align: center;
 }
 
- dd::after{
+ dt::after{
     border-top: 1px solid #333;
     content: "";
 	flex-grow: 1;
 	margin-left: 0.5rem;
 }
 
-dt{
+dd{
 	margin-left: 1rem;
+}
+
+.skillcontent{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+}
+
+.skillcontent .fas, .skillcontent .fab{
+	width: 45px;
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	margin-right: 5px;
 }
 
 /*-------------------------------------------------------------
@@ -360,6 +376,12 @@ nav li.active{
 nav li:hover{
 	color: #DFFAF9
 } 
+
+.skillcontent{
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+}
 
 
 
