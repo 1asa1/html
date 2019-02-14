@@ -97,7 +97,7 @@ header{
 	position: fixed;
 	width: 100%;
 	top: 0;
-
+	z-index: 5;
 }
 
 header .container{
@@ -226,6 +226,14 @@ profile
 	margin: 10px;
 }
 
+.qiita{
+	width: 30px;
+	display: inline-block;
+	border-radius: 2px;
+	padding-top: 3px;
+}
+
+
  dd{
     display: flex;
 	align-items: center;
@@ -252,6 +260,11 @@ dt{
 	align-items: flex-start;
 	flex-direction: column;
 	justify-content: center;
+}
+
+#work img{
+	border: #555 solid 1px;
+	width: 100%;
 }
 
 
