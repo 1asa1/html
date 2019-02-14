@@ -5,7 +5,7 @@
 
 
 //【必須】 自分のメールアドレスの設定 -- 複数のメールアドレスに送信したい場合は、以下の行をコピーして増やしていけばOKです。行頭の//を消せば有効となります。いくつでも追加可能。 --
-$rm_send_address[] = 'aaa@example.co.jp';
+$rm_send_address[] = 'more913@gmail.com';
 //$rm_send_address[] = 'aaa@example.co.jp';
 //$rm_send_address[] = 'bbb@example.co.jp';
 
@@ -13,7 +13,7 @@ $rm_send_address[] = 'aaa@example.co.jp';
 
 
 //【必須】 サンクスページのURL -- index.htmlからの相対パス、またはhttp://からの絶対パス --
-$rm_thanks_page_url = 'thanks.html';
+$rm_thanks_page_url = 'mail/php/thanks.html';
 
 
 
@@ -26,7 +26,7 @@ $rm_thanks_page_url = 'thanks.html';
 
 
 //【任意】 自分に届くメールの題名
-$rm_send_subject = 'メールフォームからお問い合わせがありました。';
+$rm_send_subject = 'ポートフォリオからお問い合わせがありました。';
 
 
 
@@ -34,7 +34,7 @@ $rm_send_subject = 'メールフォームからお問い合わせがありまし
 //【任意】 自分に届くメールの本文 -- EOMからEOM;までの間の文章を自由に変更してください。 --
 $rm_send_body = <<<EOM
 
-メールフォームからお問い合わせがありました。
+ポートフォリオからお問い合わせがありました。
 お問い合わせの内容は以下の通りです。
 
 EOM;
