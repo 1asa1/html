@@ -9,9 +9,11 @@
     <title>Document</title>
 </head>
 <body> 
+
+	
     <header class="header">
         <h1 class="logo"><a href="/">SAMPLE SITE</a></h1><!-- /.logo -->
-        <nav class="global-nav">
+        <nav class="global-nav active">
             <ul>
                 <li class="nav-item active"><a href="#">HOME</a></li><!-- /.nav-item -->
                 <li class="nav-item"><a href="#">ABOUT</a></li><!-- /.nav-item -->
@@ -20,7 +22,11 @@
                 <li class="nav-item"><a href="#">DOCS</a></li><!-- /.nav-item -->
                 <li class="nav-item"><a href="#">BLOG</a></li><!-- /.nav-item -->
             </ul>
-        </nav><!-- /.global-nav -->
+		</nav><!-- /.global-nav -->
+		
+		<div class="toggle pc-hidden">
+			<p class="toggle-text">MENU</p><!-- /.toggle-text -->
+		</div><!-- /.toggle pc-hidden -->
     </header><!-- /.header --> 
 
     <div class="wrapper clearfix">
@@ -99,7 +105,7 @@
 
             <div class="articles">
 				<h2 class="hidden">ARTICLE</h2><!-- /.hidden -->
-				<div class="clearfix">
+				<div class="clearfix articles-wrapper">
 					<a href="#" class="article-box">
 						<h3 class="title">実務で使えるHTML5/CSS3モダンコーディングTIPS</h3><!-- /.title -->
 						<p class="desc">新しい要素が増えて大幅に表現呂育が広がったモダンなコーディングにチャレンジしましょう！</p><!-- /.desc -->
@@ -137,119 +143,124 @@
 <!-------------------------------------------------------------------
 		■#sidebar
 ---------------------------------------------------------------------->		
-		<div class="sidemenu">
-			<h2 class="heading">RANKING</h2><!-- /.heading -->
-			<ol class="ranking">
-				<li class="ranking-items">
-					<a href="#">
-						<img src="images/ranking.jpg" alt="" class="img"><span class="order"></span><!-- /.order -->
-						<p class="text">HTMLコーディングと切っても切れないWEBブラウザのシェアをチェックしよう</p><!-- /.text -->
-					</a>
-				</li><!-- /.ranking-items -->
-				<li class="ranking-items">
-					<a href="#">
-						<img src="images/ranking.jpg" alt="" class="img"><span class="order"></span><!-- /.order -->
-						<p class="text">HTMLコーディングと切っても切れないWEBブラウザのシェアをチェックしよう</p><!-- /.text -->
-					</a>
-				</li><!-- /.ranking-items -->
-				<li class="ranking-items">
-					<a href="#">
-						<img src="images/ranking.jpg" alt="" class="img"><span class="order"></span><!-- /.order -->
-						<p class="text">HTMLコーディングと切っても切れないWEBブラウザのシェアをチェックしよう</p><!-- /.text -->
-					</a>
-				</li><!-- /.ranking-items -->
-				<li class="ranking-items">
-					<a href="#">
-						<img src="images/ranking.jpg" alt="" class="img"><span class="order"></span><!-- /.order -->
-						<p class="text">HTMLコーディングと切っても切れないWEBブラウザのシェアをチェックしよう</p><!-- /.text -->
-					</a>
-				</li><!-- /.ranking-items -->
-				<li class="ranking-items">
-					<a href="#">
-						<img src="images/ranking.jpg" alt="" class="img"><span class="order"></span><!-- /.order -->
-						<p class="text">HTMLコーディングと切っても切れないWEBブラウザのシェアをチェックしよう</p><!-- /.text -->
-					</a>
-				</li><!-- /.ranking-items -->
-				<li class="ranking-items">
-					<a href="#">
-						<img src="images/ranking.jpg" alt="" class="img"><span class="order"></span><!-- /.order -->
-						<p class="text">HTMLコーディングと切っても切れないWEBブラウザのシェアをチェックしよう</p><!-- /.text -->
-					</a>
-				</li><!-- /.ranking-items -->
-				<li class="ranking-items">
-					<a href="#">
-						<img src="images/ranking.jpg" alt="" class="img"><span class="order"></span><!-- /.order -->
-						<p class="text">HTMLコーディングと切っても切れないWEBブラウザのシェアをチェックしよう</p><!-- /.text -->
-					</a>
-				</li><!-- /.ranking-items -->
-				<li class="ranking-items">
-					<a href="#">
-						<img src="images/ranking.jpg" alt="" class="img"><span class="order"></span><!-- /.order -->
-						<p class="text">HTMLコーディングと切っても切れないWEBブラウザのシェアをチェックしよう</p><!-- /.text -->
-					</a>
-				</li><!-- /.ranking-items -->
-				<li class="ranking-items">
-					<a href="#">
-						<img src="images/ranking.jpg" alt="" class="img"><span class="order"></span><!-- /.order -->
-						<p class="text">HTMLコーディングと切っても切れないWEBブラウザのシェアをチェックしよう</p><!-- /.text -->
-					</a>
-				</li><!-- /.ranking-items -->
-				<li class="ranking-items">
-					<a href="#">
-						<img src="images/ranking.jpg" alt="" class="img"><span class="order"></span><!-- /.order -->
-						<p class="text">HTMLコーディングと切っても切れないWEBブラウザのシェアをチェックしよう</p><!-- /.text -->
-					</a>
-				</li><!-- /.ranking-items -->
-			</ol><!-- /.ranking -->
+		<div class="sidemenu">		
+			<div class="sidemenu-left">
+			
+				<h2 class="heading">RANKING</h2><!-- /.heading -->
+				<ol class="ranking">
+					<li class="ranking-items">
+						<a href="#">
+							<img src="images/ranking.jpg" alt="" class="img"><span class="order"></span><!-- /.order -->
+							<p class="text">HTMLコーディングと切っても切れないWEBブラウザのシェアをチェックしよう</p><!-- /.text -->
+						</a>
+					</li><!-- /.ranking-items -->
+					<li class="ranking-items">
+						<a href="#">
+							<img src="images/ranking.jpg" alt="" class="img"><span class="order"></span><!-- /.order -->
+							<p class="text">HTMLコーディングと切っても切れないWEBブラウザのシェアをチェックしよう</p><!-- /.text -->
+						</a>
+					</li><!-- /.ranking-items -->
+					<li class="ranking-items">
+						<a href="#">
+							<img src="images/ranking.jpg" alt="" class="img"><span class="order"></span><!-- /.order -->
+							<p class="text">HTMLコーディングと切っても切れないWEBブラウザのシェアをチェックしよう</p><!-- /.text -->
+						</a>
+					</li><!-- /.ranking-items -->
+					<li class="ranking-items">
+						<a href="#">
+							<img src="images/ranking.jpg" alt="" class="img"><span class="order"></span><!-- /.order -->
+							<p class="text">HTMLコーディングと切っても切れないWEBブラウザのシェアをチェックしよう</p><!-- /.text -->
+						</a>
+					</li><!-- /.ranking-items -->
+					<li class="ranking-items">
+						<a href="#">
+							<img src="images/ranking.jpg" alt="" class="img"><span class="order"></span><!-- /.order -->
+							<p class="text">HTMLコーディングと切っても切れないWEBブラウザのシェアをチェックしよう</p><!-- /.text -->
+						</a>
+					</li><!-- /.ranking-items -->
+					<li class="ranking-items">
+						<a href="#">
+							<img src="images/ranking.jpg" alt="" class="img"><span class="order"></span><!-- /.order -->
+							<p class="text">HTMLコーディングと切っても切れないWEBブラウザのシェアをチェックしよう</p><!-- /.text -->
+						</a>
+					</li><!-- /.ranking-items -->
+					<li class="ranking-items">
+						<a href="#">
+							<img src="images/ranking.jpg" alt="" class="img"><span class="order"></span><!-- /.order -->
+							<p class="text">HTMLコーディングと切っても切れないWEBブラウザのシェアをチェックしよう</p><!-- /.text -->
+						</a>
+					</li><!-- /.ranking-items -->
+					<li class="ranking-items">
+						<a href="#">
+							<img src="images/ranking.jpg" alt="" class="img"><span class="order"></span><!-- /.order -->
+							<p class="text">HTMLコーディングと切っても切れないWEBブラウザのシェアをチェックしよう</p><!-- /.text -->
+						</a>
+					</li><!-- /.ranking-items -->
+					<li class="ranking-items">
+						<a href="#">
+							<img src="images/ranking.jpg" alt="" class="img"><span class="order"></span><!-- /.order -->
+							<p class="text">HTMLコーディングと切っても切れないWEBブラウザのシェアをチェックしよう</p><!-- /.text -->
+						</a>
+					</li><!-- /.ranking-items -->
+					<li class="ranking-items">
+						<a href="#">
+							<img src="images/ranking.jpg" alt="" class="img"><span class="order"></span><!-- /.order -->
+							<p class="text">HTMLコーディングと切っても切れないWEBブラウザのシェアをチェックしよう</p><!-- /.text -->
+						</a>
+					</li><!-- /.ranking-items -->
+				</ol><!-- /.ranking -->
+		</div><!-- /.sidemenu-left -->
 
 <!-------------------------------------------------------------------
 		■documents
 ---------------------------------------------------------------------->
 
-			<h2 class="heading">DOCUMENTS</h2><!-- /.heading -->
-			<ul class="documents">
-				<li>
-					<h3 class="title">
-						HTML5</h3><!-- /.title -->
-						<ul>
-							<li><a href="#">追加された要素</a></li>
-							<li><a href="#">追加された要素</a></li>
-							<li><a href="#">追加された要素</a></li>
-						</ul>
-					
-				</li>
-				<li>
-					<h3 class="title">
-						HTML5</h3><!-- /.title -->
-						<ul>
-							<li><a href="#">追加された要素</a></li>
-							<li><a href="#">追加された要素</a></li>
-							<li><a href="#">追加された要素</a></li>
-						</ul>
-					
-				</li>
-				<li>
-					<h3 class="title">
-						HTML5</h3><!-- /.title -->
-						<ul>
-							<li><a href="#">追加された要素</a></li>
-							<li><a href="#">追加された要素</a></li>
-							<li><a href="#">追加された要素</a></li>
-						</ul>
-					
-				</li>
-			</ul><!-- /.documents -->
-
-
-<!-------------------------------------------------------------------
-		■SEARCH
----------------------------------------------------------------------->
-			<h2 class="hidden">SEARCH</h2><!-- /.hidden -->
-			<form class="search-box">
-				<input type="text" class="search-input" name="search" placeholder="SEARCH">
-				<input type="submit" class="search-button" value="検索">
-				<p class="text">サイト内の文章を検索できます</p><!-- /.text -->
-			</form><!-- /.search-box -->
+			<div class="sidemenu-right">
+				<h2 class="heading">DOCUMENTS</h2><!-- /.heading -->
+				<ul class="documents">
+					<li>
+						<h3 class="title">
+							HTML5</h3><!-- /.title -->
+							<ul>
+								<li><a href="#">追加された要素</a></li>
+								<li><a href="#">追加された要素</a></li>
+								<li><a href="#">追加された要素</a></li>
+							</ul>
+						
+					</li>
+					<li>
+						<h3 class="title">
+							HTML5</h3><!-- /.title -->
+							<ul>
+								<li><a href="#">追加された要素</a></li>
+								<li><a href="#">追加された要素</a></li>
+								<li><a href="#">追加された要素</a></li>
+							</ul>
+						
+					</li>
+					<li>
+						<h3 class="title">
+							HTML5</h3><!-- /.title -->
+							<ul>
+								<li><a href="#">追加された要素</a></li>
+								<li><a href="#">追加された要素</a></li>
+								<li><a href="#">追加された要素</a></li>
+							</ul>
+						
+					</li>
+				</ul><!-- /.documents -->
+	
+	
+	<!-------------------------------------------------------------------
+			■SEARCH
+	---------------------------------------------------------------------->
+				<h2 class="hidden">SEARCH</h2><!-- /.hidden -->
+				<form class="search-box">
+					<input type="text" class="search-input" name="search" placeholder="SEARCH">
+					<input type="submit" class="search-button" value="検索">
+					<p class="text">サイト内の文章を検索できます</p><!-- /.text -->
+				</form><!-- /.search-box -->
+			</div><!-- /.sidemenu-right -->
 
 		</div><!-- /.sidemenu -->
 	</div><!-- /.wrapper -->
