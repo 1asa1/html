@@ -61,7 +61,6 @@ header
 .global-nav{
     margin-top: 15px;
 	text-align: center;
-
 }
 
 .global-nav ul{
@@ -69,7 +68,9 @@ header
 	flex-direction: row;
 	justify-content: center;
 	width: 100%;
+	max-width: 960px;
 	flex-wrap: wrap;
+	margin: auto;
 }
 
 .global-nav .nav-item{
@@ -356,7 +357,7 @@ sidemenu
 
 .ranking .text{
 	display: inline-block;
-	width: 182px;
+	width: calc(100% - 120px);
 	font-size: 1.2rem;
 	color: #000000;
 	vertical-align: top;
@@ -576,6 +577,10 @@ footer
 		display: none;
 	}
 
+	.horizontal-list{
+		text-align: center;
+	}
+
 }
 
 @media screen and (max-width:480px){
@@ -583,7 +588,7 @@ footer
 		position: relative;
 	}
 
-	.toggle{
+	#toggle{
 		display: block;
 		position: absolute;
 		top: 0;
