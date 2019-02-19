@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+<script>
+	function update(){
+		var a = document.getElementById("a").checked;
+		var b = document.getElementById("b").checked;
+		var c = document.getElementById("c").checked;
+
+		document.getElementById('r0').textContent = (a && b && c);
+		document.getElementById('r1').textContent = (a || b || c)
+	}
+</script>
+
+
+</head>
+<body>
+
+	<h2>AND/ORテスト</h2>
+
+	<!-- onchange→inputとか内部が変更された場合に動作する -->
+	A：<input type="checkbox" id="a" onchange="update()">
+	B：<input type="checkbox" id="b" onchange="update()">
+	C：<input type="checkbox" id="c" onchange="update()">
+
+	<p>
+		A && B && C → <span id="r0"></span><!-- /#i0 --><br>
+		A || B || C → <span id="r1"></span><!-- /#i0 --><br>
+	</p>
+
+
+
+</body>
+</html>
