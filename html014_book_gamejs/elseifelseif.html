@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>3-3-4</title>
+
+  <script>
+	window.onload = function(){
+		var str = "";
+		// Date→日付に関して突っ込んである道具箱
+		// getDay()そのなかでも曜日を0-6で取得する
+		var day = new Date().getDay();
+
+		switch(day){
+			case 0:
+				str = "日";
+				break;
+			case 1:
+				str = "月";
+				break;
+			case 2:
+				str = "火";
+				break;
+			case 3:
+				str = "水";
+				break;
+			case 4:
+				str = "木";
+				break;
+			case 5:
+				str = "金";
+				break;
+			case 6:
+				str = "土";
+				break;
+		}
+		document.getElementById('day').textContent = str
+	}
+
+  </script>
+
+</head>
+<body>
+
+	<h1>今日は<span id="day"></span>曜日<!-- /#day --></h1>
+
+</body>
+</html>
