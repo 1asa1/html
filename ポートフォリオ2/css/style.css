@@ -9,12 +9,13 @@
 
 html{
 	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 62.5%;
 	
 }
 
 #body{
 	line-height: 1.8;
-	font-size: 72%;
+	font-size: 1.2rem;
 	background: url(../img/bg-body.png)
 }
 
@@ -68,7 +69,7 @@ h2{
     display: flex;
 	align-items: center;
 	text-align: center;
-	font-size: 1.2rem;
+	font-size: 1.7rem;
 }
 
 h2::before,h2::after{
@@ -81,6 +82,10 @@ h2::after{
 }
 h2::before{
 	margin-right: 0.5rem;
+}
+
+h3{
+	font-size: 1.5rem;
 }
 
 .btn{
@@ -295,6 +300,11 @@ profile
 	margin-right: 5px;
 }
 
+.rating{
+	display: block;
+	color: #A23B42;
+}
+
 /*-------------------------------------------------------------
 		#work
 -------------------------------------------------------------*/
@@ -310,6 +320,8 @@ profile
 	border: #555 solid 1px;
 	width: 100%;
 }
+
+
 
 /*-------------------------------------------------------------
 		#contact
