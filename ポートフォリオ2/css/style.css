@@ -409,20 +409,19 @@ header{
 }
 
 #toggle-menu ul li{
-	font-size: 1rem;
 	padding: 10px;
 	border-top: none;
 }
 
 
 
- nav ul{
+#toggle-menu ul{
 	display: flex;
 	justify-content: space-around;
 	width: 100%;
 }
 
-nav li{
+#toggle-menu li{
 	display: inline-block;
 	max-width: 150px;
 	flex: 1;
@@ -435,10 +434,10 @@ nav li{
 	transition: color 0.5s;
 }
 
-nav li.active{
+#toggle-menu li.active{
 	color: #A33C43
 }
-nav li:hover{
+#toggle-menu li:hover{
 	color: #A33C43
 } 
 
