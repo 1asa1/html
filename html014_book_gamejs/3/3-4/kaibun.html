@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+<script>
+	function kaibun(){
+
+		var result = "";
+		var str = document.getElementById("source").value;
+
+		// 条件式：取り込んだもとのの文字数に追いつくまで
+		for(var i = 0; i < str.length; i++){
+			//例：あいうえおでiが0なら、5-0-1=4、あが0なので「お」
+			var pos = str.length - i - 1;
+			//そのposの位置の文字をresultにいれる
+			result += str.charAt(pos);
+
+		}
+		document.getElementById("result").textContent = result;
+	}
+
+
+</script>
+
+
+</head>
+<body>
+
+	<input id="source">
+	<button onclick="kaibun()">回文</button>
+	<p id="result"></p><!-- /#result -->
+
+
+</body>
+</html>
