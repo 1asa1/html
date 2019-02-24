@@ -1,2 +1,116 @@
 @charset "uft-8";
 
+img{
+	max-width: 100%;
+}
+
+a{
+	transition: opacity 0.3s;
+}
+
+a:hover{
+	opacity: 0.8;
+	text-decoration: none;
+}
+
+/*-------------------------------------------------------------
+		header
+-------------------------------------------------------------*/
+.header-top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h1{
+	height: 100px;
+}
+h1 img{
+	height: 100%;
+}
+
+nav{
+	width: 100%;
+}
+
+nav .menu{
+	display: flex;
+	flex: 1;
+	justify-content: space-around
+}
+
+nav .menu li{
+	width: 100%;
+	text-align: center;
+}
+
+nav .menu li a{
+	display: block;
+}
+
+/*-------------------------------------------------------------
+		main
+-------------------------------------------------------------*/
+
+
+
+main dl{
+	width: 100%;
+}
+
+main dt{
+	text-align: left;
+}
+
+main dd{
+	text-align: right;
+	border-bottom: 1px dashed #ccc;
+	padding-bottom: 5px;
+}
+
+.kodawari-wrap{
+	margin: 50px 0 ;
+}
+
+a.kodawari-box{
+	border: 1px solid #000;
+	display: block;
+	transform: rotate(-15deg);
+}
+
+a.kodawari-box p{
+	transform: rotate(15deg);
+	margin-top: 15px;
+}
+
+.oshirase-items{
+	padding: 10px;
+	margin-bottom: 1px solid #ccc;
+}
+
+.oshirase-items:nth-of-type(odd){
+	background-color: #fff;
+}
+.oshirase-items:nth-of-type(even){
+	background-color: #ccc;
+}
+
+.oshirase.col{
+	padding: 0;
+}
+.oshirase{
+	overflow-y: scroll;
+	height: 15rem;
+	font-size: 0.9rem
+}
+.oshirase span{
+	margin-left: 10px;
+	border-radius: 20px;
+}
+
+.oshirase p{
+	width: 100%;
+	margin-bottom: 0;
+	padding-left: 1rem;
+}
+
