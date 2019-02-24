@@ -1,0 +1,38 @@
+<!DOCTYPE ht(ml>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+<script>
+
+function c2f(c){
+	var f = (c * 9 / 5) + 32;
+	return  Math.floor(f);
+}
+
+function convert(){
+	var c = document.getElementById("celsius").value;
+	var f = c2f(c);
+
+	var s = "摂氏：" + c + "度　華氏：" + f +"度"
+	document.getElementById("result").textContent = s;
+}
+
+
+</script>
+
+<input type="range" min="0" max="100" onchange="convert()" id="celsius">
+<p id="result"></p><!-- /#result -->
+
+
+</head>
+<body>
+
+
+
+
+</body>
+</html>
