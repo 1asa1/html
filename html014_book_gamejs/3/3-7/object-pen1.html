@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>3-7-2</title>
+
+<script>
+var pen = {
+	color: "red",
+	length: 5,
+}
+
+function checkLength(){
+	document.getElementById("length").textContent = pen.length;
+}
+
+</script>
+
+</head>
+<body>
+	<button onclick="checkLength()">長さチェック</button>
+	<p>鉛筆の長さは<span id="length"></span>cm<!-- /#length --></p>
+
+
+</body>
+</html>
