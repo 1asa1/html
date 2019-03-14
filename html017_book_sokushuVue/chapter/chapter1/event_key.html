@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>速習Vue.js</title>
+</head>
+<body>
+
+<id id="app">
+<form>
+	<label for="name">指名：</label>
+	<!-- keyup →このキーが押されたらclearを実行する -->
+	<input type="text" id="name" v-on:keyup.esc="clear" v-model="name">
+</form>
+</id><!-- /#app -->
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.8/dist/vue.js"></script>
+	<script src="event_key.js"></script>
+</body>
+</html>
