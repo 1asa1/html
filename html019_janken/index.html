@@ -4,16 +4,148 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>じゃんけん</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <link rel="stylesheet" href="css/style.css">
+	<style>
+	
+	.janken, .tokuten{
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		max-width: 500px;
+	}
+
+	.jibun_box, .aite_box, .tokuten div{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+	}
+
+	.jibun_te div{
+		padding: 10px;
+		border: 1px solid skyblue;
+		margin-top: 5px;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	#kekka{
+		width: 100%;
+		max-width: 500px;
+		text-align: center;
+		height: 30px;
+		line-height: 30px;
+	}
+
+
+	</style>
+
+
 </head>
 <body>
 
+	<div class="janken">
+		<div class="jibun_box">
+			<div class="jibun_te">
+				<div id="gu">ぐー</div><!-- /#gu -->
+				<div id="tyoki">ちょき</div><!-- /#tyoki -->
+				<div id="pa">ぱー</div><!-- /#pa -->
+			</div><!-- /.jibun_te -->
+		</div><!-- /.jibun_box -->
 
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="js/style.js"></script>
+		<div class="aite_box">
+			<div id="aite_te">まだだよ</div><!-- /#aite_te -->
+		</div><!-- /.aite_box -->
+	</div><!-- /.janken -->
+
+
+	<div id="kekka">
+		じゃんけん……
+	</div><!-- /#kekka -->
+
+
+	<div class="tokuten">
+		<div id="jibun_tokuten">0</div><!-- /#jibun_tokuten -->
+		<div id="aite_tokuten">0</div><!-- /#aite_tokuten -->
+	</div><!-- /.tokuten -->
+
+  <script>
+	var jibun = 0;
+	var aite = 0;
+	var aiteId = document.getElementById('aite_te');
+	var kekkaId = document.getElementById('kekka');
+	var jibunTokutenId = document.getElementById('jibun_tokuten');
+	var aiteTokutenId = document.getElementById('aite_tokuten');
+	var jibunKekka = 0;
+	var aiteKekka = 0;
+
+	document.getElementById('gu').addEventListener('click', function(){
+		aite_te();
+		if(aite == 1){
+			aiteId.innerHTML = 'ぐー';
+			kekkaId.innerHTML = 'あいこ！'
+		}else if(aite == 2){
+			aiteId.innerHTML = 'ちょき';
+			kekkaId.innerHTML = 'かち！';
+			jibunKekka = jibunKekka + 1;
+		}else{
+			aiteId.innerHTML = 'ぱー';
+			kekkaId.innerHTML = 'まけ！';
+			aiteKekka = aiteKekka + 1;
+		}
+		kekka()
+	});
+	document.getElementById('tyoki').addEventListener('click', function(){
+		aite_te();
+		if(aite == 1){
+			aiteId.innerHTML = 'ぐー';
+			kekkaId.innerHTML = 'まけ！';
+			aiteKekka = aiteKekka + 1;
+		}else if(aite == 2){
+			aiteId.innerHTML = 'ちょき';
+			kekkaId.innerHTML = 'あいこ！';
+		}else{
+			aiteId.innerHTML = 'ぱー';
+			kekkaId.innerHTML = 'かち！';
+			jibunKekka = jibunKekka + 1;
+		}
+		kekka()
+	});
+	document.getElementById('pa').addEventListener('click', function(){
+		aite_te();
+		if(aite == 1){
+			aiteId.innerHTML = 'ぐー';
+			kekkaId.innerHTML = 'かち！';
+			jibunKekka = jibunKekka + 1;
+		}else if(aite == 2){
+			aiteId.innerHTML = 'ちょき';
+			kekkaId.innerHTML = 'まけ！';
+			aiteKekka = aiteKekka + 1;
+		}else{
+			aiteId.innerHTML = 'ぱー';
+			kekkaId.innerHTML = 'あいこ！';
+		}
+		kekka()
+	});
+
+	function aite_te(){
+		aite = Math.floor(Math.random()*3)+1;
+		console.log(aite);
+	}
+
+	function kekka(){
+		jibunTokutenId.innerHTML = jibunKekka;
+		aiteTokutenId.innerHTML = aiteKekka;
+	}
+ 
+
+
+
+
+
+  </script>
 </body>
 </html>
